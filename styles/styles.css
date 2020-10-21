@@ -2,15 +2,34 @@
 
 * {
     box-sizing: border-box;
-   
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 16px;
+    background-color: #2f3b47;
+    color: white;
+    margin: 0 auto;
+}
+
+.top-text {
+    padding-bottom: 50px;
+    margin-bottom: 5px;
+    border-bottom: solid black;
+    font-size: 1em;
 }
 
 form {
-    background: #f4f7f8;
     border-radius: 10px;
     max-width: 400px;
     padding: 10px 20px;
-    margin: 10px auto;
+    margin: 0 auto;
+}
+
+div {
+    border-top: solid black;
+    border-width: 2px;
 }
 
 h1 {
@@ -27,6 +46,7 @@ p {
 
 fieldset {
     border: none;
+    margin-top: 25px;
 }
 
 legend {
@@ -36,7 +56,12 @@ legend {
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+::placeholder {
+    color: grey;
+    text-align: end;  
 }
 
 .line {
@@ -56,13 +81,33 @@ input[type="email"],
 input[type="number"],
 textarea, 
 select {
-    background: rgba(255,255,255,0.1);
     border: none;
     padding: 15px;
     width: 100%;
     background-color: #e8eeef;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #23af9c;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+    outline: none !important;
+    border:1px solid #23af9c;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+select:focus {
+    outline: none !important;
+    border:1px solid #23af9c;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#zipcode {
+    max-width: 40%;
 }
 
 input[type="radio"],
@@ -81,4 +126,20 @@ button {
     border: 1px solid #fffbfb;
     box-shadow: 0 -1px 0 rgba(62, 14, 233, 0.1) inset;
     margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+      opacity: .75;
+  }
+
+
+  @media (min-width: 769px) {
+    
+    form {
+        max-width: 650px;
+    }
+
+ 
+
   }
