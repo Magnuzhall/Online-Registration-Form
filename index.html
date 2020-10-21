@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Registration Form</title>
+    <title>Newsletter Registration Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" href="./images/favcon.png"> 
@@ -18,15 +18,15 @@
 
         <fieldset>
 
-            <legend>Contact Information</legend>
+            <legend><b>Contact Information</b></legend>
             <label for="name">Full Name</label>
             <input type="text" id="name" name="user_name">
 
             <label for="email">Email Address</label>
-            <input type="text" id="email" name="user_email">
+            <input type="email" id="email" name="user_email">
 
             <label for="phone">Phone Number</label>
-            <input type="text" id="phone" name="user_phone_number">
+            <input type="number" id="phone" name="user_phone_number">
 
             <label for="city">City</label>
             <input type="text" id="city" name="user_city">
@@ -57,28 +57,27 @@
 
         <fieldset>
             
-            <legend>Newsletter</legend>
+            <legend><b>Newsletter</b></legend>
 
             <label>Select the newsletter you would like to receive</label>
             <input type="checkbox" id="html_news" value="html_news" name="user_interest">
-            <label for="html_news" class="#">HTML News</label>
+            <label for="html_news" class="line">HTML News</label><br>
             <input type="checkbox" id="css_news" value="css_news" name="user_interest">
-            <label for="css_news" class="#">CSS News</label>
+            <label for="css_news" class="line">CSS News</label><br>
             <input type="checkbox" id="javascript_news" value="javascript_news" name="user_interest">
-            <label for="javascript_news" class="#">Javascript News</label>
+            <label for="javascript_news" class="line">Javascript News</label>
 
-            <label>Newsletter Format</label>
+            <label class="news_format">Newsletter Format</label>
             <input type="radio" id="html" value="html" name="newsletter_format">
-            <label for="html" class="#">HTML</label>
+            <label for="html" class="line">HTML</label><br>
             <input type="radio" id="plain_text" value="plain_text" name="newsletter_format">
-            <label for="plain_text" class="#">Plain text</label>
+            <label for="plain_text" class="line">Plain text</label>
 
-            <label for="topics">Other topics you'd like to hear about</label>
+            <label for="topics" class="topics_text">Other topics you'd like to hear about</label>
             <textarea id="topics" name="user_topics"></textarea>
-
+            <button type="submit">Sign Up</button>
         </fieldset>
 
-        <button type="submit">Sign Up</button>
         <p>Copyright The Code Review</p>
     </form>
 
