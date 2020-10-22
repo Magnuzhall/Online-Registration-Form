@@ -31,7 +31,13 @@ form {
     margin: 0 auto;
 }
 
-div {
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.newsletter-section {
     border-top: solid black;
     border-width: 2px;
 }
@@ -76,10 +82,10 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="tel"],
 textarea, 
 select {
-    border: none;
+    border: 1px solid transparent;
     padding: 15px;
     width: 100%;
     background-color: #e8eeef;
@@ -149,6 +155,20 @@ button {
         max-width: 650px;
     }
 
- 
-
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    #name, #email, #phone, #city, #province {
+        max-width: 80%;
+    }
+    
+    #zipcode {
+        margin-right: auto;
+    }
+    .zip-code {
+        margin-right: 11%;
+    }
   }
